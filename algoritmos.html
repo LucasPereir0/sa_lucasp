@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="PT- br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/bubbleSort.js" defer></script>
+    <title>Algoritmos e Fluxogramas</title>
+</head>
+
+<body>
+    <nav>
+        <h1 id="titulo">LordTech®️</h1>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="services.html">Redes</a></li>
+                    <li><a href="algoritmos.html">Algoritmos e Fluxogramas/a></li>
+                    <li><a href="componentes.html">Componentes</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="eletroeletronia.html">Eletroeletrônica</a></li>
+                    <li><a href="banco.html">Banco de Dados</a></li>
+                </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Metodo de Ordenação</h1>
+        <h2>BubbleSort</h2>
+        <p>O Bubble sort é um algoritmo simples de ordenação que recebe como entrada uma lista de elementos e produz uma lista ordenada de acordo com um critério.</p>
+        <p>Ordenação do seguinte array: [13, 18, 25, 12, 1, 5]</p>
+        <button id="bubbleSort" onclick="crescente()">Crescente</button>
+        <button id="bubbleSort" onclick="decrescente()">Decrescente</button>
+        <button id="bubbleSort" onclick="mostrar()">Mostrar Código</button>
+        <br><br>
+        <div id="res"></div>
+        <div id="codigo"></div>
+        <pre id="codigoCss" style="display: none;">let res = document.getElementById('res')
+            let array = [13, 18, 25, 12, 1, 5]
+            let aux=0
+            
+            function crescente(){
+                for (let j = array.length - 1; j > 0; j--) {
+                    for (let i = 0; i < array.length - 1; i++) {
+                        if (array[i] > array[i + 1]) {
+                            aux = array[i]
+                            array[i] = array[i + 1]
+                            console.table(array)
+                            array[i + 1] = aux
+                            console.table(array)
+                        }
+            
+                    }
+                }
+                res.innerHTML = ''
+                res.innerHTML = `O array ordenado em ordem crescente ficou ${array}`
+            
+            }
+            function decrescente(){
+                for (let j = array.length - 1; j > 0; j--) {
+                    for (let i = 0; i < array.length - 1; i++) {
+                        if (array[i] < array[i + 1]) {
+                            aux = array[i]
+                            array[i] = array[i + 1]
+                            console.table(array)
+                            array[i + 1] = aux
+                            console.table(array)
+                        }
+            
+                    }
+                }
+                res.innerHTML = ''
+                res.innerHTML = `O array ordenado em ordem decrescente ficou ${array}`
+            }
+                
+        </pre>
+
+        <h1>O que é um Fluxograma?</h1>
+        <p>Um fluxograma é uma representação gráfica de um processo ou algoritmo, usado para visualizar etapas, decisões e fluxos de execução. Ele utiliza símbolos padrão para representar ações, decisões, entradas e saídas.</p>
+       <h1>Elementos Básicos do Fluxograma</h1><br>
+       <h2>Início e Fim:</h2>
+       <p>Representado por um oval.</p>
+       <p>Indica onde o algoritmo começa e termina.</p>
+       <h2>Processos:</h2>
+       <p>Representado por um retângulo.</p>
+       <p>Cada etapa ou ação do algoritmo.</p>
+       <h2>Decisões:</h2>
+       <p>Representado por um losango.</p>
+       <p>Pontos onde há condições ou ramificações.</p>
+       <h2>Entradas/Saídas:</h2>
+       <p>Representado por um paralelogramo.</p>
+       <p>Indica entrada de dados ou apresentação de resultados.</p>
+       <h2>Conectores:</h2>
+       <p>Setas que mostram o fluxo entre os elementos.</p>
+    </main>
+    <footer>
+        <h2>LordTech®️</h2>
+    </footer>
+</body>
+
+</html>

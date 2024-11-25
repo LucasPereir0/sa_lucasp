@@ -1,0 +1,132 @@
+
+h1{
+    text-align: center;
+}
+/* Estilização do cabeçalho */
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilização do parágrafo */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Estilização do botão */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+
+
+
+
+/* NAVEGACAO */
+
+
+
+
+
+/* Estilização do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #c9c3c3;
+}
+
+
+/* Estilização da lista de navegação */
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: rgb(80, 79, 79);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #FFD700; /* Cor ao passar o mouse */
+}
+
+/* Estilização do parágrafo e botão*/
+main {
+    text-align: center;
+}
+
+
+button:hover {
+    background-color: #218838;
+    opacity: 0.8; /* Efeito de hover */
+}
+
+footer{
+    font-size: 10px;
+}
+
+img {
+    max-width: 50%; /* Garante que a imagem não exceda a largura do contêiner */
+    height: 500px; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+}
+
+img:hover {
+    transform: scale(1.05); /* Aumenta um pouco a imagem ao passar o mouse */
+}
+
+
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.instagram {
+    background-color: #E1306C; /* Cor do Instagram */
+}
+
+.whatsapp {
+    background-color: #25D366; /* Cor do WhatsApp */
+}
+
+.button:hover {
+    opacity: 0.8; /* Efeito de hover */
+}
+.github {
+    background-color: #333; /* Cor do GitHub */
+}
